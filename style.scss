@@ -17,7 +17,12 @@ $transition: .4s ease;
 /*****************
 mixins
 *****************/
-
+@mixin bgImg {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
 /*****************
 basic styles
 *****************/
@@ -81,5 +86,12 @@ nav {
         }
     }
 }
-
+/*****************
+home
+*****************/
+#home {
+    background-image: linear-gradient(rgba(236, 208, 72,.4), rgba(236, 208, 72,.4)), url(img/home-background.png);
+    position: relative;
+    @include bgImg;
+}
 
