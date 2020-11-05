@@ -51,6 +51,20 @@ a {
         transition: $transition;
     }
 }
+.sign-up {
+    display: none;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: $green;
+    color: $white;
+    text-align: center;
+    padding: 20px;
+    a {
+        color: black;
+    }
+}
 /*****************
 nav
 *****************/
@@ -91,7 +105,6 @@ home
 *****************/
 #home {
     background-image: linear-gradient(rgba(236, 208, 72,.4), rgba(236, 208, 72,.4)), url(img/home-background.png);
-    position: relative;
     @include bgImg;
 }
 
