@@ -172,4 +172,31 @@ home
         }
     }
 }
-
+/*****************
+about
+*****************/
+#about {
+    background: $green;
+    .about-page {
+        padding-top: 100px;
+        padding-bottom: 50px;
+        p {
+            font-size: 1.4rem;
+            text-align: justify;
+            .img-left {
+                float: left;
+                width: 30%;
+                &:hover {
+                    transform: rotate(360deg);
+                }
+            }
+            .img-right {
+                float: right;
+                width: 30%;
+                &:hover {
+                    transform: rotate(-360deg);
+                }
+            }
+        }
+    }
+}

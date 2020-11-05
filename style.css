@@ -175,4 +175,33 @@ home
   }
 }
 
+/*****************
+about
+*****************/
+#about {
+  background: #0d9968;
+}
+#about .about-page {
+  padding-top: 100px;
+  padding-bottom: 50px;
+}
+#about .about-page p {
+  font-size: 1.4rem;
+  text-align: justify;
+}
+#about .about-page p .img-left {
+  float: left;
+  width: 30%;
+}
+#about .about-page p .img-left:hover {
+  transform: rotate(360deg);
+}
+#about .about-page p .img-right {
+  float: right;
+  width: 30%;
+}
+#about .about-page p .img-right:hover {
+  transform: rotate(-360deg);
+}
+
 /*# sourceMappingURL=style.css.map */
