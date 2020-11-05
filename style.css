@@ -55,6 +55,42 @@ a:hover {
   color: black;
 }
 
+.main-headings {
+  font-size: 5rem;
+  margin-bottom: 15px;
+}
+
+.underline {
+  background: #383838;
+  height: 8px;
+  width: 100px;
+  margin-bottom: 15px;
+}
+
+.icons {
+  display: flex;
+  list-style: none;
+}
+.icons li {
+  margin-right: 30px;
+}
+.icons li a {
+  font-size: 2rem;
+  color: #383838;
+}
+.icons li a:hover {
+  color: #000;
+  transition-duration: 0.7s;
+}
+.icons li i:hover {
+  animation: punKrug 0.7s linear;
+}
+@keyframes punKrug {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
 /*****************
 nav
 *****************/
@@ -63,6 +99,11 @@ nav {
   display: flex;
   justify-content: space-between;
 }
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+  }
+}
 nav .logo {
   font-family: "Arizonia", sans-serif;
   font-size: 3rem;
@@ -70,6 +111,7 @@ nav .logo {
   background: #383838;
   padding: 10px 15px;
   border-radius: 10px 35px;
+  text-align: center;
 }
 nav ul {
   display: flex;
@@ -86,6 +128,11 @@ nav ul .active {
 nav ul li {
   list-style: none;
   margin-left: 50px;
+}
+@media (max-width: 768px) {
+  nav ul li {
+    margin: 20px 5px 5px 5px;
+  }
 }
 nav ul li a {
   font-size: 1.2rem;
@@ -107,6 +154,25 @@ home
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
+}
+@media (max-width: 768px) {
+  #home {
+    background-position: right;
+    background-image: linear-gradient(rgba(236, 208, 72, 0.8), rgba(236, 208, 72, 0.8)), url(img/home-background.png);
+  }
+}
+#home .about-home {
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  font-size: 1.7rem;
+  width: 60%;
+}
+@media (max-width: 768px) {
+  #home .about-home {
+    width: 100%;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
