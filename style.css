@@ -210,6 +210,7 @@ about
 }
 #about .about-page p .img-left:hover {
   transform: rotate(360deg);
+  transition-duration: 1s;
 }
 #about .about-page p .img-right {
   float: right;
@@ -222,6 +223,7 @@ about
 }
 #about .about-page p .img-right:hover {
   transform: rotate(-360deg);
+  transition-duration: 1s;
 }
 
 /*****************
