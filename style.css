@@ -59,6 +59,11 @@ a:hover {
   font-size: 5rem;
   margin-bottom: 15px;
 }
+@media (max-width: 768px) {
+  .main-headings {
+    font-size: 3rem;
+  }
+}
 
 .underline {
   background: #383838;
@@ -185,6 +190,11 @@ about
   padding-top: 100px;
   padding-bottom: 50px;
 }
+@media (max-width: 768px) {
+  #about .about-page {
+    padding-top: 50px;
+  }
+}
 #about .about-page p {
   font-size: 1.4rem;
   text-align: justify;
@@ -193,6 +203,11 @@ about
   float: left;
   width: 30%;
 }
+@media (max-width: 768px) {
+  #about .about-page p .img-left {
+    width: 100%;
+  }
+}
 #about .about-page p .img-left:hover {
   transform: rotate(360deg);
 }
@@ -200,8 +215,101 @@ about
   float: right;
   width: 30%;
 }
+@media (max-width: 768px) {
+  #about .about-page p .img-right {
+    width: 100%;
+  }
+}
 #about .about-page p .img-right:hover {
   transform: rotate(-360deg);
+}
+
+/*****************
+contact
+*****************/
+#contact {
+  background-image: linear-gradient(rgba(105, 184, 213, 0.5), rgba(105, 184, 213, 0.5)), url(img/contact-pozadina.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+#contact .contact {
+  display: flex;
+  padding-top: 150px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+@media (max-width: 768px) {
+  #contact .contact {
+    padding-top: 50px;
+  }
+}
+#contact .contact .contact-text {
+  font-size: 1.5rem;
+  flex: 0 0 48%;
+}
+@media (max-width: 768px) {
+  #contact .contact .contact-text {
+    flex: 0 0 100%;
+  }
+}
+#contact .contact .contact-text .copy {
+  padding-bottom: 150px;
+}
+@media (max-width: 768px) {
+  #contact .contact .contact-text .copy {
+    padding-bottom: 50px;
+  }
+}
+#contact .contact .forma {
+  flex: 0 0 48%;
+}
+@media (max-width: 768px) {
+  #contact .contact .forma {
+    flex: 0 0 100%;
+  }
+}
+@media (max-width: 768px) {
+  #contact .contact .forma form {
+    padding-top: 50px;
+  }
+}
+#contact .contact .forma form input {
+  width: 100%;
+  padding: 10px;
+  border-radius: 20px 40px;
+  border: none;
+  font-size: 1.2rem;
+  font-weight: 900;
+  color: #383838;
+  margin-bottom: 10px;
+  font-family: sans-serif;
+  opacity: 0.6;
+}
+#contact .contact .forma form textarea {
+  width: 100%;
+  padding: 10px;
+  border-radius: 20px 40px;
+  border: none;
+  font-size: 1.2rem;
+  font-weight: 900;
+  color: #383838;
+  margin-bottom: 10px;
+  font-family: sans-serif;
+  opacity: 0.6;
+}
+#contact .contact .forma form input[type=submit] {
+  background: #383838;
+  width: 300px;
+  color: #fff;
+  cursor: pointer;
+  margin-top: 20px;
+  opacity: 1;
+}
+#contact .contact .forma form input[type=submit]:hover {
+  background: #000;
+  transition: 0.4s ease;
 }
 
 /*# sourceMappingURL=style.css.map */
